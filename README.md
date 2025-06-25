@@ -13,11 +13,12 @@ A full-stack authentication system built with **Flask** (Python) on the backend 
 - Docker: 28.2.2
 - postgres:17.5-alpine
 
-## 🛠 Tech
+## 🛠 Technologies
 
 - **Backend**: Python + Flask  
 - **Frontend**: React  
-- **Database**: PostgreSQL + SQLAlchemy  
+- **Database**: PostgreSQL + SQLAlchemy + Docker  
+
 
 
 ## Instalations
