@@ -1,0 +1,6 @@
+CREATE TABLE "users" (
+    id VARCHAR(15) PRIMARY KEY,
+    username VARCHAR(30) NOT NULL UNIQUE,
+    passwd VARCHAR(90) NOT NULL,
+    session_version INTEGER NOT NULL DEFAULT 1
+)

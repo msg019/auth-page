@@ -1,0 +1,15 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1{
+        font-size: 4rem;
+        text-shadow: 2px 2px 2px white;
+    }
+
+    img{
+        border-radius: 12px;
+    }
+}

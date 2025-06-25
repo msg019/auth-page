@@ -1,0 +1,14 @@
+services:
+  postgresql:
+    image: postgres:17.5-alpine
+    container_name: postgres
+    environment:
+      - POSTGRES_DB=app-db
+      - POSTGRES_USER=user-db
+      - POSTGRES_PASSWORD=app_1234
+
+    ports:
+      - 5432:5432
+    
+    volumes: 
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
