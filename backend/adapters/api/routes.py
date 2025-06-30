@@ -13,9 +13,6 @@ def register():
             username=data["username"]
             passwd= data["passwd"]
 
-            if not username or not passwd:
-                return jsonify({"error":"Fields are empty"}), 400
-
             register_user=AuthService()
             try:
                 register_user.register(username,passwd)
@@ -40,9 +37,6 @@ def login():
         data=request.get_json()
         username=data["username"]
         passwd= data["passwd"]
-            
-        if not username or not passwd:
-            return jsonify({"error":"Fields are empty"}), 400
             
         login_user=AuthService()
 
