@@ -19,6 +19,7 @@ def addUser(id,username,passwd):
 def searchUser(username):
     localSession=session()
     try:
+        username=username.lower()
         query=localSession.query(User).filter_by(username=username).scalar()
         return query
     finally:

@@ -68,6 +68,7 @@ export const Login=()=>{
                         placeholder="username..."
                         required
                         maxLength={20}
+                        autoComplete="off"
                     />
                 </div>
                 <div className={styles.groupContainer}>
@@ -78,6 +79,7 @@ export const Login=()=>{
                         type="password"
                         required
                         maxLength={20}
+                        autoComplete="off"
                     />
                 </div>
 

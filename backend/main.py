@@ -7,7 +7,7 @@ import os
 load_dotenv()
 
 app=Flask(__name__)
-CORS(app, supports_credentials=True, origins="http://localhost:5173/*")
+CORS(app, supports_credentials=True, origins="http://localhost:5173")
 
 app.config["POSTGRESQL_URL"]=os.getenv("POSTGRESQL_URL")
 app.config["SALT"]=os.getenv("SALT")

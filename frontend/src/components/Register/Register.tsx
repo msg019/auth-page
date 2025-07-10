@@ -71,6 +71,7 @@ export const Register=()=>{
                         placeholder="username..."
                         maxLength={20}
                         required
+                        autoComplete="off"
                     />
                 </div>
                 <div className={styles.groupContainer}>
@@ -81,6 +82,7 @@ export const Register=()=>{
                         type="password"
                         maxLength={20}
                         required
+                        autoComplete="off"
                     />
                 </div>
 
